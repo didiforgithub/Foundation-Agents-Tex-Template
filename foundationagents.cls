@@ -92,6 +92,7 @@
 \RequirePackage{mdframed}
 \RequirePackage{caption}
 \RequirePackage{needspace}
+\RequirePackage{placeins}
 
 %%======== Can use any of these fonts ========
 %\RequirePackage{charter}
@@ -288,6 +289,7 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 	\vskip20pt%
 	]
 	\thispagestyle{firststyle}
+	\FloatBarrier
 }%
 \else% \@twocolumnfalse
 \renewcommand{\maketitle}{\bgroup\setlength{\parindent}{0pt}
@@ -306,6 +308,7 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 		{\abscontent}
 	}%
 	\thispagestyle{firststyle}
+	\FloatBarrier
 }%
 \fi
 \makeatother
