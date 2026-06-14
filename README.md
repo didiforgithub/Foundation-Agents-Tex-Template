@@ -1,9 +1,11 @@
-# Foundation Agents Google-Style LaTeX Template
+# Foundation Agents LaTeX Template
 
 A compact LaTeX template for Foundation Agents community papers. The class is
-adapted from the Google DeepMind open-access paper template and localized with a
-Foundation Agents first-page header, author block, footer, and technical-report
-style typography.
+localized with a Foundation Agents first-page header, author block, footer, and
+technical-report style typography.
+
+The layout follows the design language of Google's open-access research paper
+templates while keeping Foundation Agents branding in the visible paper surface.
 
 ## Quick Start
 

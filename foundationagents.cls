@@ -143,7 +143,7 @@ a4paper]{geometry}%
 \newcommand{\foundationagentswordmark}{%
 	\raisebox{1.8pt}{\includegraphics[height=19.5pt]{assets/fa-icon.png}}%
 	\hspace{6pt}%
-	\raisebox{0.5pt}{\includegraphics[height=18.5pt]{assets/foundation-agents-wordmark-google-sans.png}}%
+	\raisebox{0.5pt}{\includegraphics[height=18.5pt]{assets/foundation-agents-wordmark.png}}%
 }
 \newcommand{\foundationagentsicon}{%
 	\includegraphics[height=18pt]{assets/fa-icon.png}%
