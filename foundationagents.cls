@@ -125,7 +125,7 @@ headsep=20pt,%
 %showframe, % for testing
 a4paper]{geometry}%
 \setlength{\columnsep}{15pt} % Distance between the two columns of text
-%\setlength{\parindent}{0pt}
+\setlength{\parindent}{0pt}
 \setlength{\parskip}{0.5\baselineskip}
 
 %% *Custom font sizes and styles
