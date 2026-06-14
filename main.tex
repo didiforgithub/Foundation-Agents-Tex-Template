@@ -1,0 +1,117 @@
+\documentclass[11pt, a4paper, logo, copyright]{foundationagents}
+
+\pdfinfoomitdate 1
+\renewcommand{\today}{}
+
+\usepackage[numbers,sort&compress]{natbib}
+\hypersetup{
+  colorlinks,
+  citecolor=blue,
+  linkcolor=red,
+  urlcolor=blue}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{multirow}
+\usepackage{xspace}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+\newcommand{\method}{\textsc{FoundationAgent}\xspace}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+
+\title{A Foundation Agents Paper Template}
+
+\author[1,2]{First Author}
+\author[2]{Second Author}
+\author[1$\dagger$]{Corresponding Author}
+
+\affil[1]{The Hong Kong University of Science and Technology (Guangzhou)}
+\affil[2]{Foundation Agents}
+
+\correspondingauthor{Corresponding Author (\texttt{author@example.com})}
+\keywords{Agent learning; evaluation; scalable environments}
+
+\begin{abstract}
+This repository provides a compact LaTeX template for Foundation Agents
+community papers. It keeps the paper body quiet and readable, while using a
+Foundation Agents wordmark in the first-page header and a Google-style technical
+report layout. Replace this abstract with the short summary of your work.
+\end{abstract}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+This is a minimal paper skeleton using the \texttt{foundationagents} class.
+It supports regular sections, citations~\citep{vaswani2017attention}, figures,
+tables, theorem environments, algorithms, and appendices.
+
+\section{Method}
+
+The template is intentionally light: keep paper-specific macros in
+\texttt{main.tex}, and keep shared layout behavior in \texttt{foundationagents.cls}.
+For example, \method can be introduced as a project-local command.
+
+\begin{definition}[Reusable Template]
+A reusable template should make the common path easy while leaving paper-specific
+styling and notation in the paper source.
+\end{definition}
+
+\begin{algorithm}[t]
+\caption{Example Procedure}
+\label{alg:example}
+\begin{algorithmic}[1]
+  \State Initialize a candidate solution.
+  \For{$t = 1$ to $T$}
+    \State Evaluate the current candidate.
+    \State Update the candidate using feedback.
+  \EndFor
+  \State \Return the best candidate.
+\end{algorithmic}
+\end{algorithm}
+
+\section{Experiments}
+
+\begin{table}[h]
+\caption{A compact example table.}
+\label{tab:example}
+\centering
+\begin{tabular}{lcc}
+\toprule
+Method & Score & Cost \\
+\midrule
+Baseline & 42.0 & 1.0x \\
+\method & 58.5 & 1.2x \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}
+
+Replace this sample with your paper content. The class will place the
+Foundation Agents mark in the first-page header when the \texttt{logo} option is
+enabled.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\newpage
+\appendix
+\section{Appendix}
+
+Additional details can go here.
+
+\end{document}
